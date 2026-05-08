@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Links</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
-        .container { max-width: 800px; margin: 100px auto; padding: 40px; }
-        .link-btn { 
-            display: block; background: #24292e; color: white; 
-            padding: 15px; margin: 10px 0; text-decoration: none; border-radius: 8px;
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #ffffff;
+            --accent-color: #58a6ff;
+            --btn-hover: #1f6feb;
         }
-        .link-btn:hover { background: #404448; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .link-card {
+            display: block;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .link-card:hover {
+            background-color: var(--btn-hover);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <img src="your-photo.jpg" width="100" style="border-radius: 50%;">
-        <h2>Connect With Me</h2>
-        <a class="link-btn" href="https://t.me/bitsrchat">Telegram</a>
-        <a class="link-btn" href="https://facebook.com/baktoukitsiemreap">Facebook</a>
-        <a class="link-btn" href="https://google.com">Visit My Store</a>
+        <!-- Replace the URL below with your photo link or delete this line -->
+        <img src="https://github.com" alt="Profile" class="profile-img">
+        
+        <h1>My Connect Links</h1>
+
+        <!-- EDIT YOUR LINKS BELOW -->
+        <a href="https://t.me" class="link-card" target="_blank">✈️ Telegram</a>
+        <a href="https://facebook.com" class="link-card" target="_blank">📘 Facebook</a>
+        <a href="https://goo.gl" class="link-card" target="_blank">📍 Find Me on Maps</a>
+        <a href="mailto:your@email.com" class="link-card">✉️ Email Me</a>
+
+        <div class="footer">
+            Powered by GitHub Pages
+        </div>
     </div>
+
 </body>
 </html>
